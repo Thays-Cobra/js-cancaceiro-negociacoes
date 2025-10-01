@@ -1,0 +1,46 @@
+/* 
+    . = classe (agrupar diversos elementos para uma única estilização)
+    # = id (usado somente para 1 elemento, que pode existir somente 1x no documento html
+ */
+
+* {
+    /* reset padrão da pagina */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    font-family: sans-serif;
+    padding: 24px; /* pra não ficar colado */
+    color: coral;
+}
+
+.form {
+    padding-top: 32px; /* pra não ficar colado do h1 */
+    display: flex; /* fica em linha */
+    flex-direction: column; /* alinhar em colunas */
+    gap: 16px;
+    max-width: 200px; /* largura máxima permitida */
+}
+
+label {
+    margin-bottom: 4px; /* margem externa inferior */
+}
+
+input {
+    border: 2px solid #ddddde;
+}
+
+input, button {
+    border-radius: 4px; /* grossura da borda */
+    padding: 4px 8px; /* margem interna */
+}
+
+label, .form-control {
+    display: block; /* cada elemento ocupa a linha toda */
+    width: 100%; /* ocupa todo o espaço */
+}
+
+
+/*  */
