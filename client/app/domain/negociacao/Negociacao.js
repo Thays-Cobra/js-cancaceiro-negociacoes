@@ -2,7 +2,7 @@ class Negociacao {
 
     constructor(_data, _quantidade, _valor) {
         this._data = new Date(_data.getTime());
-        Object.assign(this, {_quantidade, _valor});
+        Object.assign(this, {_quantidade, _valor}); // shorthand property names
         Object.freeze(this);
     }
 
