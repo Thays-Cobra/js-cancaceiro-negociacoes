@@ -1,12 +1,14 @@
 class DateConverter {
 
-    paraTexto(data) {
-        return data.getDate()
-        + '/' + (data.getMonth() + 1)
-        + '/' + data.data.getFullYear();
+    constructor() {
+        throw new Error('DateConverter não pode ser instanciada');
+    }
+    
+    static paraTexto(data) {
+        return `${data.getDate()}/${data.getMonth() + 1}/${data.getFullYear()}`;
     }
 
-    paraData(texto) {
+    static paraData(texto) {
        return new Date(...texto
             .split('-')
             .map((item, indice) => item - indice % 2)
